@@ -101,10 +101,21 @@ interface RateLimiter {
 
 ## File Organization
 
-When creating planning documents, use clear naming conventions:
+**Output Directory:** `.claude/founder-mode-plans/` (in the current project)
+
+Create this directory if it doesn't exist. All planning documents go here.
+
+**Naming Conventions:**
 - `feature-name-plan.md` - For feature planning documents
 - `architecture-component-name.md` - For architectural designs
 - `research-topic.md` - For research and analysis documents
 - `decision-log.md` - For recording architectural decisions
+
+**Example paths:**
+```
+.claude/founder-mode-plans/auth-system-plan.md
+.claude/founder-mode-plans/architecture-api-gateway.md
+.claude/founder-mode-plans/research-caching-strategies.md
+```
 
 Remember: Your role is to think deeply and document clearly. The code will come later—your job is to ensure that when coding begins, the path forward is crystal clear.

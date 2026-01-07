@@ -74,6 +74,20 @@ Only after achieving a 9+ rating:
 | `solution-architect` | Creates detailed implementation plans | `*-plan.md` files |
 | `solution-architect-judge` | Evaluates and scores plans | `*.judge.md` files |
 
+## File Storage
+
+All agent-generated plans go to: `.claude/founder-mode-plans/`
+
+```
+project/
+└── .claude/
+    └── founder-mode-plans/
+        ├── feature-name-plan.md
+        └── feature-name-plan.judge.md
+```
+
+These files are **temporary working documents**—gitignored, not committed. Once implementation is complete, they can be deleted.
+
 ## Why This Workflow?
 
 - Forces thorough thinking before coding

@@ -94,6 +94,24 @@ Build out agent pairs for each startup function:
 └── .gitignore
 ```
 
+## Working Files
+
+Agents output plans to `.claude/founder-mode-plans/` in each project:
+
+```
+your-project/
+└── .claude/
+    └── founder-mode-plans/
+        ├── auth-feature-plan.md
+        └── auth-feature-plan.judge.md
+```
+
+These are **temporary working files**—gitignored by default. Add this to your project's `.gitignore`:
+
+```
+.claude/founder-mode-plans/
+```
+
 ## The Founder's Job
 
 You don't write code. You don't design systems. You:

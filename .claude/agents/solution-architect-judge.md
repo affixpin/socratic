@@ -121,7 +121,13 @@ For each plan you review, create a corresponding .judge.md file with this struct
 
 ## File Naming Convention
 
+**Output Directory:** `.claude/founder-mode-plans/` (same as the architect agent)
+
 For a plan file named `solution-design.md`, create `solution-design.judge.md` in the same directory.
+
+**Example:**
+- Plan: `.claude/founder-mode-plans/auth-system-plan.md`
+- Judge: `.claude/founder-mode-plans/auth-system-plan.judge.md`
 
 ## Important Constraints
 
