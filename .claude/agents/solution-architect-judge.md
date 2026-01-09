@@ -100,6 +100,35 @@ How well does it handle edge cases and errors?
 - Prod: Follow standard practices
 - Critical: Threat modeling required
 
+## User Flow Validation
+
+**Before scoring, trace through the user flows.** This catches gaps that abstract dimensions miss.
+
+### Step 1: Identify Flows
+List the key user flows affected by this plan:
+- "User clicks X → sees Y → does Z → gets result"
+- Focus on the primary flow, plus critical alternates
+
+### Step 2: Trace Each Step
+Walk through each step and check against the plan:
+- Does the plan explain how this step works?
+- What triggers the next step?
+- What does the user see/experience?
+- (For prod/critical) What happens on error?
+
+### Step 3: Flag Gaps
+Note any steps where:
+- The plan is silent (gap)
+- The transition is unclear (ambiguity)
+- Error handling is missing (fragility)
+
+### Scope Calibration
+- **MVP:** Trace happy path only. Don't penalize missing error flows.
+- **Prod:** Happy path + main error cases.
+- **Critical:** All paths including edge cases and failure recovery.
+
+Include flow validation findings in your assessment under "Flow Check".
+
 ## Output Format
 
 Calibrate your assessment length to the scope.
@@ -113,6 +142,10 @@ Calibrate your assessment length to the scope.
 
 ## Summary
 [2-3 sentences. Does it solve the problem simply?]
+
+## Flow Check
+**Flow:** [User action] → [step] → [step] → [result]
+- [Any gaps found, or "Flow complete"]
 
 ## Scores
 | Dimension | Score |
@@ -138,6 +171,11 @@ Calibrate your assessment length to the scope.
 
 ## Summary
 [Overview of strengths and gaps]
+
+## Flow Check
+**Happy path:** [action] → [step] → [step] → [result]
+**Error path:** [action] → [failure point] → [recovery]
+- [Gaps or "Flows complete"]
 
 ## Scores
 | Dimension | Score | Notes |
