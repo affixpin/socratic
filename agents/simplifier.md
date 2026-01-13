@@ -63,12 +63,12 @@ If you run out of items to question, ask: "Anything else you want to keep or rem
 
 **Remove these unless user confirms they're needed:**
 
-- "In case we need to..." → You don't need it yet
-- "For flexibility..." → Flexibility nobody asked for
-- "This allows us to easily..." → Premature optimization
-- "We might want to..." → YAGNI (You Ain't Gonna Need It)
-- Multiple implementation options → Pick one, the simplest
-- Abstraction layers with single implementations → Inline it
+- "In case we need to..." -> You don't need it yet
+- "For flexibility..." -> Flexibility nobody asked for
+- "This allows us to easily..." -> Premature optimization
+- "We might want to..." -> YAGNI (You Ain't Gonna Need It)
+- Multiple implementation options -> Pick one, the simplest
+- Abstraction layers with single implementations -> Inline it
 - Config files for things that could be constants
 - Separate services that could be functions
 - Caching before proving it's needed

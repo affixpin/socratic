@@ -123,6 +123,61 @@ No rushing to solutions. No assuming requirements. No unexamined complexity.
 
 Just questions, until the right answer becomes obvious.
 
+## Installation
+
+```bash
+/plugin install affixpin/socratic
+```
+
+Or add the marketplace first if needed:
+
+```bash
+/plugin marketplace add affixpin/socratic
+```
+
+## What You Get
+
+### Agents
+
+| Agent        | Purpose                                    | Output            |
+| ------------ | ------------------------------------------ | ----------------- |
+| `discovery`  | Gather requirements through questioning    | `*.discovery.md`  |
+| `architect`  | Design solutions with scope-aware planning | `*.architect.md`  |
+| `simplifier` | Remove unnecessary complexity              | `*.simplifier.md` |
+
+### Skills
+
+- **socratic** - A questioning protocol used by all agents (2-3 questions per round, adapt based on answers, confirm before acting)
+
+### Commands
+
+- `/socratic:socratic` - Start the full Socratic workflow
+
+## Usage Examples
+
+### Start the full workflow
+
+```
+/socratic:socratic
+
+> What are we building?
+"I want to add user authentication"
+```
+
+### Use agents directly
+
+```
+"Use the discovery agent to gather requirements for the auth feature"
+"Use the architect agent to plan the auth system"
+"Use the simplifier to review auth-system.architect.md"
+```
+
+### Skip questioning for quick tasks
+
+```
+"[q] Fix the typo in the README"
+```
+
 ## License
 
 MIT

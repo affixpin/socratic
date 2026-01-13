@@ -36,10 +36,10 @@ Use the AskUserQuestion tool. Ask 2-3 related questions per round.
 
 ### Step 3: Adapt Based on Answers
 
-- Vague answer → Probe deeper
-- New information revealed → Explore that thread
-- Contradiction detected → Point it out, ask for clarification
-- Clear answer → Move to next question area
+- Vague answer -> Probe deeper
+- New information revealed -> Explore that thread
+- Contradiction detected -> Point it out, ask for clarification
+- Clear answer -> Move to next question area
 
 ### Step 4: Confirm Before Proceeding
 
@@ -47,8 +47,8 @@ Before moving to your core work, summarize:
 - "Here's what I understand: [summary]"
 - "Is there anything else I should know before I proceed?"
 
-If user says "yes, also..." → Ask more questions about that
-If user confirms → Proceed to your core work
+If user says "yes, also..." -> Ask more questions about that
+If user confirms -> Proceed to your core work
 
 ## Rules
 
