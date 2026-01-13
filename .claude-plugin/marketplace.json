@@ -1,17 +1,21 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "affixpin-socratic",
   "description": "Socratic Development - Question before acting. A methodology that uses discovery, architect, and simplifier agents.",
   "owner": {
     "name": "affixpin",
-    "github": "https://github.com/affixpin"
+    "email": "affixpin@users.noreply.github.com"
   },
   "plugins": [
     {
       "name": "socratic",
-      "source": {
-        "type": "local",
-        "path": "."
-      }
+      "description": "Socratic Development methodology with discovery, architect, and simplifier agents",
+      "author": {
+        "name": "affixpin",
+        "email": "affixpin@users.noreply.github.com"
+      },
+      "source": ".",
+      "category": "development"
     }
   ]
 }
