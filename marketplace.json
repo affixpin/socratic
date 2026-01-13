@@ -1,0 +1,10 @@
+{
+  "name": "affixpin-socratic",
+  "description": "https://github.com/affixpin/socratic",
+  "plugins": [
+    {
+      "name": "socratic",
+      "path": "."
+    }
+  ]
+}

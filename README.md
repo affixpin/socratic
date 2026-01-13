@@ -7,7 +7,8 @@ A Claude Code plugin that implements the Socratic method for software developmen
 ## Installation
 
 ```bash
-/plugin install affixpin/socratic
+/plugin marketplace add affixpin/socratic
+/plugin install socratic@affixpin-socratic
 ```
 
 ## The Idea
